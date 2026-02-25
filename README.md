@@ -22,6 +22,7 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
 - Thiết kế mạch:
   - Ổn định, chống nhiễu
   - Phù hợp cho ứng dụng học tập và thực tế
+- Cổng kết nối cảm biến: Conector Domino 3P
 - Đi kèm cáp kết nối: 3P XH2.54–Dupont
 
 ## Các chân tín hiệu
@@ -45,6 +46,11 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
   </tr>
 </tbody>
 </table>
+
+Cổng kết nối cảm biến:
+- SIG:	Chân tín hiệu của cảm biến (Vàng - Yellow)
+- GND:	Chân cấp nguồn âm cho cảm biến 0VDC (Đen - Black)
+- 3V3:	Chân cấp nguồn dương cho cảm biến 3.3VDC (Đỏ - Red)
 
 ## Hướng dẫn sử dụng
 ### Hướng dẫn kết nối
@@ -72,6 +78,7 @@ Nếu bắt đầu tự án mới cần cài đặt Extension **MKE_ONE_MICROBIT
 ## Hình ảnh sản phẩm
 ![MKE-S15 DS18B20](/extras/MKE-S15_2.png)
 ![MKE-S15 DS18B20](/extras/MKE-S15_3.png)
+
 
 
 
