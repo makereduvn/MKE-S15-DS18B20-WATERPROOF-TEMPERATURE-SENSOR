@@ -22,13 +22,14 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
 - Thiết kế mạch:
   - Ổn định, chống nhiễu
   - Phù hợp cho ứng dụng học tập và thực tế
+- Cổng kết nối cảm biến: Conector 3P Domino
 - Đi kèm cáp kết nối: 3P XH2.54–Dupont
 
 ## Các chân tín hiệu
 <table><thead>
   <tr>
     <th>MKE-S15</th>
-    <th>Ghi chú</th>
+    <th>3P XH2.54</th>
   </tr></thead>
 <tbody>
   <tr>
@@ -46,10 +47,32 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
 </tbody>
 </table>
 
+<table><thead>
+  <tr>
+    <th>MKE-S15</th>
+    <th>3P Domino</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>G</td>
+    <td>Chân cấp nguồn âm cho cảm biến 0VDC (Đen - Black)</td>
+  </tr>
+  <tr>
+    <td>V</td>
+    <td>Chân cấp nguồn dương cho cảm biến 3.3VDC (Đỏ - Red)</td>
+  </tr>
+  <tr>
+    <td>S</td>
+    <td>Chân tín hiệu của cảm biến (Vàng - Yellow)</td>
+  </tr>
+</tbody>
+</table>
+
 ## Hướng dẫn sử dụng
 ### Hướng dẫn kết nối
 - Cấp nguồn 5VDC cho mạch qua hai chân GND và 5V.
 - Kết nối chân SIG của cảm biến với chân điều khiển được khai báo trong chương trình.
+- - Kết nối cảm biến với mạch truyền tín hiệu qua cổng 3P Domino.
 ### Hướng dẫn sử dụng với Arduino Uno / Vietduino Uno / ESP32
 - Trong **Tools / Library Manager**, tìm và cài đặt bộ thư viện tổng hợp **"MKE_ONE" by MakerEdu.vn**
 - Mở chương trình mẫu **"MKE_S15_DS18B20_Serial_XXX"** tại **File / Examples / MAKEREDU / Module / MKE_S15_DS18B20**
@@ -72,6 +95,8 @@ Nếu bắt đầu tự án mới cần cài đặt Extension **MKE_ONE_MICROBIT
 ## Hình ảnh sản phẩm
 ![MKE-S15 DS18B20](/extras/MKE-S15_2.png)
 ![MKE-S15 DS18B20](/extras/MKE-S15_3.png)
+
+
 
 
 
