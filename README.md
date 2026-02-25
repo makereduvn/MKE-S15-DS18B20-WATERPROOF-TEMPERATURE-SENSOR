@@ -4,7 +4,7 @@ MKE-S15 DS18B20 Waterproof Temperature Sensor là cảm biến đo nhiệt độ
 
 Sản phẩm phù hợp cho nhiều ứng dụng như đo nhiệt độ môi trường, đo nhiệt độ nước, vườn thông minh, thiết bị IoT và các dự án STEM. Mạch được thiết kế tối ưu về độ ổn định tín hiệu và khả năng chống nhiễu, đảm bảo hoạt động tin cậy trong cả môi trường học tập và ứng dụng thực tế.
 
-Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperature Sensor hỗ trợ điện áp giao tiếp 3.3V và 5VDC, cho phép kết nối trực tiếp và an toàn với các bo mạch điều khiển phổ biến như Arduino, Raspberry Pi, Jetson Nano, Micro:bit và nhiều nền tảng khác. Sản phẩm đi kèm cáp kết nối 4P XH2.54 – Dupont, đảm bảo kết nối chắc chắn, ổn định và thuận tiện trong quá trình lắp đặt và sử dụng.
+Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperature Sensor hỗ trợ điện áp giao tiếp 3.3V và 5VDC, cho phép kết nối trực tiếp và an toàn với các bo mạch điều khiển phổ biến như Arduino, Raspberry Pi, Jetson Nano, Micro:bit và nhiều nền tảng khác. Sản phẩm đi kèm cáp kết nối 3P XH2.54 – Dupont, đảm bảo kết nối chắc chắn, ổn định và thuận tiện trong quá trình lắp đặt và sử dụng.
 
 ## Thông số kỹ thuật
 - Điện áp cấp nguồn: 5VDC
@@ -72,6 +72,7 @@ Nếu bắt đầu tự án mới cần cài đặt Extension **MKE_ONE_MICROBIT
 ## Hình ảnh sản phẩm
 ![MKE-S15 DS18B20](/extras/MKE-S15_2.png)
 ![MKE-S15 DS18B20](/extras/MKE-S15_3.png)
+
 
 
 
