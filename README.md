@@ -33,15 +33,15 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
   </tr></thead>
 <tbody>
   <tr>
-    <td>GND</td>
+    <td>-</td>
     <td>Chân cấp nguồn âm 0VDC</td>
   </tr>
   <tr>
-    <td>5V</td>
+    <td>+</td>
     <td>Chân cấp nguồn dương 5VDC</td>
   </tr>
   <tr>
-    <td>SIG</td>
+    <td>S</td>
     <td>Chân tín hiệu Digital</td>
   </tr>
 </tbody>
@@ -95,6 +95,7 @@ Nếu bắt đầu tự án mới cần cài đặt Extension **MKE_ONE_MICROBIT
 ## Hình ảnh sản phẩm
 ![MKE-S15 DS18B20](/extras/MKE-S15_2.png)
 ![MKE-S15 DS18B20](/extras/MKE-S15_3.png)
+
 
 
 
