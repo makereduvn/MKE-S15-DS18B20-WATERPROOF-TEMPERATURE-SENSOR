@@ -10,7 +10,7 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
 - Điện áp cấp nguồn: 5VDC
 - Chuẩn tín hiệu điều khiển: Digital 1-Wire
 - Điện áp giao tiếp: TTL 3.3 / 5VDC
-- Cảm biến sử dụng: DS18B20
+- Cảm biến sử dụng: DS18B20 vỏ kim loại chống nước
 - Khoảng đo nhiệt độ: (-55) ~ 125°C
 - Sai số: 0.5°C trong khoảng từ (-10°C) ~ 85°C.
 - Khả năng tương thích:
@@ -24,6 +24,7 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
   - Phù hợp cho ứng dụng học tập và thực tế
 - Cổng kết nối cảm biến: Conector 3P Domino
 - Đi kèm cáp kết nối: 3P XH2.54–Dupont
+- Chiều dài dây cảm biến: 1m
 
 ## Các chân tín hiệu
 <table><thead>
@@ -96,6 +97,7 @@ Nếu bắt đầu tự án mới cần cài đặt Extension **MKE_ONE_MICROBIT
 ![MKE-S15 DS18B20](/extras/MKE-S15_4.png)
 ![MKE-S15 DS18B20](/extras/MKE-S15_2.png)
 ![MKE-S15 DS18B20](/extras/MKE-S15_3.png)
+
 
 
 
