@@ -93,8 +93,10 @@ Nếu bắt đầu tự án mới cần cài đặt Extension **MKE_ONE_MICROBIT
 ![MKE-S15 DS18B20](/extras/MKE-S15_1.jpg)
 
 ## Hình ảnh sản phẩm
+![MKE-S15 DS18B20](/extras/MKE-S15_4.png)
 ![MKE-S15 DS18B20](/extras/MKE-S15_2.png)
 ![MKE-S15 DS18B20](/extras/MKE-S15_3.png)
+
 
 
 
