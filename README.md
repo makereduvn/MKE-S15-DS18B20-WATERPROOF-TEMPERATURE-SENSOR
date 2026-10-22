@@ -72,7 +72,7 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
 ## Hướng dẫn sử dụng
 
 ### Hướng dẫn kết nối
-- Cấp nguồn 5VDC cho mạch qua hai chân - và +.
+- Cấp nguồn 5VDC cho mạch qua hai chân `-` và `+`.
 - Kết nối chân `S` (SIGNAL) của cảm biến với chân điều khiển được khai báo trong chương trình.
 - Kết nối cảm biến với mạch truyền tín hiệu qua cổng 3P Domino.
 
