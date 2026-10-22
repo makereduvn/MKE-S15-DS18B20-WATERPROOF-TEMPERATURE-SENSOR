@@ -88,14 +88,14 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
 ```ino
 #include "MKE_DS18B20.h"
 // Đặt tên cho chân kết nối cảm biến
-#define DS18B20_PIN 11     // Digital pin connected to the sensor
+#define DS18B20_PIN 11     // Digital pin connected to the sensor (Uno/Creator)
 
 OneWire oneWire_11(DS18B20_PIN);
-MKE_DS18B20 sensor(&oneWire_11);
+MKE_DS18B20 TEMP11(&oneWire_11);
 
 // Tạo biến lưu giá trị cảm biến
 // value read from the sensor
-float sensorValue1 = 0;
+float sensorValue11 = 0;
 
 void setup()
 {
@@ -103,20 +103,20 @@ void setup()
   // Start the Serial UART connection at 115200 to transfer data to the computer.
   Serial.begin(115200);
 
-  sensor.begin();
+  TEMP11.begin();
 }
 
 void loop()
 {
   // Đọc giá trị cảm biến
   // Get value
-  sensor.requestTemperatures();
-  sensorValue1 = sensor.getTempC();
+  TEMP11.requestTemperatures();
+  sensorValue11 = TEMP11.getTempC();
 
   // Hiển thị giá trị đo được của cảm biến lên máy tính.
   // Show the sensor value on Arduno Serial Monitor
   Serial.print("Temp: ");
-  Serial.println(sensorValue1);
+  Serial.println(sensorValue11);
   
   // Chờ 2000ms
   // Wait 2000ms
@@ -131,11 +131,11 @@ void loop()
 #define DS18B20_PIN 23     // IO23
 
 OneWire oneWire_11(DS18B20_PIN);
-MKE_DS18B20 sensor(&oneWire_11);
+MKE_DS18B20 TEMP11(&oneWire_11);
 
 // Tạo biến lưu giá trị cảm biến
 // value read from the sensor
-float sensorValue1 = 0;
+float sensorValue11 = 0;
 
 void setup()
 {
@@ -143,20 +143,20 @@ void setup()
   // Start the Serial UART connection at 115200 to transfer data to the computer.
   Serial.begin(115200);
 
-  sensor.begin();
+  TEMP11.begin();
 }
 
 void loop()
 {
   // Đọc giá trị cảm biến
   // Get value
-  sensor.requestTemperatures();
-  sensorValue1 = sensor.getTempC();
+  TEMP11.requestTemperatures();
+  sensorValue11 = TEMP11.getTempC();
 
   // Hiển thị giá trị đo được của cảm biến lên máy tính.
   // Show the sensor value on Arduno Serial Monitor
   Serial.print("Temp: ");
-  Serial.println(sensorValue1);
+  Serial.println(sensorValue11);
   
   // Chờ 2000ms
   // Wait 2000ms
