@@ -79,7 +79,7 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
 ### Hướng dẫn sử dụng với Arduino / ESP32
 - Trong Github của bộ thư viện, chọn **<> Code / Download ZIP** để tải về bộ thư viện.
 - Mở chương trình Arduino, chọn **Sketch / Include Library / Add .ZIP Library** để cài đặt bộ thư viện.
-- Mở chương trình mẫu tại **File / Examples / MKE_DS18B20 Temp**
+- Mở chương trình mẫu tại **File / Examples / MKE_S15_DS18B20**
 - Cấu hình board mạch tương ứng là **Arduino Uno / ESP32**, chọn đúng cổng **COM Port** của mạch và nhấn **Upload** để nạp chương trình.
 - Cấp nguồn 5VDC cho mạch, kết nối chân `S` (SIGNAL) của cảm biến với chân điều khiển được khai báo trong chương trình.
 - Xem kết quả mạch hoạt động theo chương trình đã nạp.
