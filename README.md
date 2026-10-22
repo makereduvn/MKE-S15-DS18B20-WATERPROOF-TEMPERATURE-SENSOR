@@ -75,13 +75,94 @@ Cảm biến nhiệt độ chống nước MKE-S15 DS18B20 Waterproof Temperatur
 - Cấp nguồn 5VDC cho mạch qua hai chân - và +.
 - Kết nối chân S (SIGNAL) của cảm biến với chân điều khiển được khai báo trong chương trình.
 - Kết nối cảm biến với mạch truyền tín hiệu qua cổng 3P Domino.
-- 
-### Hướng dẫn sử dụng với Arduino Uno / Vietduino Uno / ESP32
-- Trong **Tools / Library Manager**, tìm và cài đặt bộ thư viện tổng hợp **"MKE_ONE" by MakerEdu.vn**
-- Mở chương trình mẫu tại **File / Examples / MKE_ONE / Sensor / MKE_S15_DS18B20**
+
+### Hướng dẫn sử dụng với Arduino / ESP32
+- Trong Github của bộ thư viện, chọn **<> Code / Download ZIP** để tải về bộ thư viện.
+- Mở chương trình Arduino, chọn **Sketch / Include Library / Add .ZIP Library** để cài đặt bộ thư viện.
+- Mở chương trình mẫu tại **File / Examples / MKE_DS18B20 Temp**
 - Cấu hình board mạch tương ứng là **Arduino Uno / ESP32**, chọn đúng cổng **COM Port** của mạch và nhấn **Upload** để nạp chương trình.
 - Cấp nguồn 5VDC cho mạch, kết nối chân S (SIGNAL) của cảm biến với chân điều khiển được khai báo trong chương trình.
 - Xem kết quả mạch hoạt động theo chương trình đã nạp.
+
+#### Chương trình mẫu cho Arduino Uno:
+```ino
+#include "MKE_DS18B20.h"
+// Đặt tên cho chân kết nối cảm biến
+#define DS18B20_PIN 11     // Digital pin connected to the sensor
+
+OneWire oneWire_11(DS18B20_PIN);
+MKE_DS18B20 sensor(&oneWire_11);
+
+// Tạo biến lưu giá trị cảm biến
+// value read from the sensor
+float sensorValue1 = 0;
+
+void setup()
+{
+  // Khởi động kết nối Serial UART ở tốc độ 115200 để truyền dữ liệu lên máy tính.
+  // Start the Serial UART connection at 115200 to transfer data to the computer.
+  Serial.begin(115200);
+
+  sensor.begin();
+}
+
+void loop()
+{
+  // Đọc giá trị cảm biến
+  // Get value
+  sensor.requestTemperatures();
+  sensorValue1 = sensor.getTempC();
+
+  // Hiển thị giá trị đo được của cảm biến lên máy tính.
+  // Show the sensor value on Arduno Serial Monitor
+  Serial.print("Temp: ");
+  Serial.println(sensorValue1);
+  
+  // Chờ 2000ms
+  // Wait 2000ms
+  delay(2000);
+}
+```
+
+#### Chương trình mẫu cho ESP32:
+```ino
+#include "MKE_DS18B20.h"
+// Đặt tên cho chân kết nối cảm biến
+#define DS18B20_PIN 23     // IO23
+
+OneWire oneWire_11(DS18B20_PIN);
+MKE_DS18B20 sensor(&oneWire_11);
+
+// Tạo biến lưu giá trị cảm biến
+// value read from the sensor
+float sensorValue1 = 0;
+
+void setup()
+{
+  // Khởi động kết nối Serial UART ở tốc độ 115200 để truyền dữ liệu lên máy tính.
+  // Start the Serial UART connection at 115200 to transfer data to the computer.
+  Serial.begin(115200);
+
+  sensor.begin();
+}
+
+void loop()
+{
+  // Đọc giá trị cảm biến
+  // Get value
+  sensor.requestTemperatures();
+  sensorValue1 = sensor.getTempC();
+
+  // Hiển thị giá trị đo được của cảm biến lên máy tính.
+  // Show the sensor value on Arduno Serial Monitor
+  Serial.print("Temp: ");
+  Serial.println(sensorValue1);
+  
+  // Chờ 2000ms
+  // Wait 2000ms
+  delay(2000);
+}
+```
 
 ### Hướng dẫn lập trình với Micro:bit (kéo thả khối)
 - Khởi động [Microsoft MakeCode](https://makecode.microbit.org/) và **Import** chương trình theo đường link sau: `https://github.com/makereduvn/mke_s15_ds18b20_microbit/`
